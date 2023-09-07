@@ -45,7 +45,7 @@ class Mobile(BaseModel):
     rating = models.IntegerField(default=0,null=True,blank=True)
 
     def __str__(self):
-        return str(self.brand)
+        return f'{str(self.brand)} uuid >>  {str(self.uuid)}'
 class Highlights(BaseModel):
     mobile = models.ForeignKey(Mobile,on_delete=models.CASCADE,related_name='highlights',related_query_name='highlights')
     ram = models.CharField(max_length=100)
@@ -56,11 +56,10 @@ class Highlights(BaseModel):
     battery = models.CharField(max_length=100)
 
     def __str__(self):
-        return str(self.mobile)
+        return f'{self.mobile}______Hg_uuid____{self.uuid}'
     
 class Others_Details(BaseModel):
     mobile = models.ForeignKey(Mobile,on_delete=models.CASCADE,related_name='other_details',related_query_name='other_details')
-    highlights = models.ForeignKey(Highlights,on_delete=models.CASCADE,related_name='other_details',related_query_name='other_details')
     network =models.CharField(max_length=100)
     sim_type = models.CharField(max_length=100)
     expandible_storage = models.CharField(max_length=100)

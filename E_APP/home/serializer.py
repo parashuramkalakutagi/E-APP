@@ -12,3 +12,9 @@ class highlightsserializer(serializers.ModelSerializer):
         model = Highlights
         # fields = '__all__'
         exclude = ['created_at', 'updated_at']
+
+
+class OtherDetailsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Others_Details
+        exclude = ['created_at','updated_at']

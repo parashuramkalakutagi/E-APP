@@ -5,6 +5,7 @@ home = DefaultRouter()
 
 home.register('MobileViewset',MobileViewset,basename='MobileViewset')
 home.register('highlightsViewset',highlightsViewset,basename='highlightsViewset')
+home.register('OtherDetailsViewset',OtherDetailsViewset,basename='OtherDetailsViewset')
 
 urlpatterns = [
     path('',include(home.urls)),

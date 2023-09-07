@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+admin.site.register(Catagory)
+admin.site.register(Colour)
+admin.site.register(Brand)
+admin.site.register(Mobile)
+admin.site.register(Highlights)
+admin.site.register(Others_Details)

@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/django
+    ports:
+      - 8000:8000
+    image: app:django
+    container_name: django_contatiner
+    command: python manage.py runserver 0.0.0.0:8000
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - .:/django
+    image: nginx
+    container_name: nginx_container
+    ports:
+      - 8002:8002
+    depends_on:
+      - app

@@ -71,7 +71,11 @@ class Others_Details(BaseModel):
     def __str__(self):
         return str(self.mobile)
 
+class Laptops(BaseModel):
+    brand_name = models.CharField(max_length=3000)
+    price = models.CharField(max_length=100)
+    discription = models.TextField()
+    reviews = models.CharField(max_length=100)
 
-
-
-
+    def __str__(self):
+        return self.brand_name

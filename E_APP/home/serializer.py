@@ -18,3 +18,8 @@ class OtherDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Others_Details
         exclude = ['created_at','updated_at']
+
+class LaptopSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Laptops
+        exclude = ['created_at','updated_at']

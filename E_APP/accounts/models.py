@@ -8,6 +8,7 @@ import uuid
 
 class Profile(AbstractUser):
     email = models.EmailField(unique=True,null=True,blank=True)
+    user_email = models.EmailField(default=None, null=True, unique=True)
     name = models.CharField(max_length=100)
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=10)
@@ -19,4 +20,4 @@ class Profile(AbstractUser):
 
     objects = UserManager()
     def __str__(self):
-        return self.username
+        return str(self.email)

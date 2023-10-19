@@ -79,3 +79,11 @@ class Laptops(BaseModel):
 
     def __str__(self):
         return self.brand_name
+
+class Mobiles(BaseModel):
+    Product_Name = models.CharField(max_length=100000)
+    Product_Price = models.CharField(max_length=100)
+    Product_Reviews = models.CharField(max_length=100)
+
+    def __str__(self):
+        return str(self.Product_Name)

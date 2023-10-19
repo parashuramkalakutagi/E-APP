@@ -14,7 +14,33 @@ from django.db.models import Q , F
 from datetime import timedelta
 from django.utils import timezone
 import datetime
-from .mobile_data_api import phone_details
+from .mobile_data_api import phone_details,Mobile_data
+
+class Oneplus_mobiles_view(viewsets.ViewSet):
+    def list(self,request,*args,**kwargs):
+        try:
+            Mobile_data()
+            query = Mobiles.objects.all().order_by('?')
+            serializer = MobilessSerializer(query,many=True)
+            return Response(serializer.data,status=HTTP_200_OK)
+        except KeyError as e:
+            response = {
+                "error": str(e),
+                "message": "Invalid data format.",
+                "status_code": HTTP_400_BAD_REQUEST
+            }
+            return Response(response, status=HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+            response = {
+                "error": str(e),
+                "message": "Something went wrong.",
+                "status_code": HTTP_500_INTERNAL_SERVER_ERROR
+            }
+            return Response(response, status=HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+
 
 class LaptopViewset(viewsets.ViewSet):
     def list(self,request,*args,**kwargs):
@@ -202,4 +228,3 @@ class OtherDetailsViewset(viewsets.ViewSet):
             error_message = 'Something went wrong.'
             return Response({'message': error_message, 'status_code': status.HTTP_400_BAD_REQUEST, 'error': str(e)},
                             status=status.HTTP_400_BAD_REQUEST)
-

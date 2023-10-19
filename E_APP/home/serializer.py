@@ -23,3 +23,11 @@ class LaptopSerializer(serializers.ModelSerializer):
     class Meta:
         model = Laptops
         exclude = ['created_at','updated_at']
+
+
+class MobilessSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Mobiles
+        exclude = ['created_at','updated_at']
+
+

@@ -671,3 +671,114 @@ def mobiles_details():
         }
     ]
     return mobile_data
+
+
+def One_plus_data():
+    one_plus = [
+        {
+            "Product_Name": "OnePlus 11 5G (Titan Black, 16GB RAM, 256GB Storage)",
+            "Product_Price": "61,999",
+            "Product_Reviews": "4,259"
+        },
+        {
+            "Product_Name": "OnePlus 10T 5G (Jade Green, 8GB RAM, 128GB Storage)",
+            "Product_Price": "39,999",
+            "Product_Reviews": "4,390"
+        },
+        {
+            "Product_Name": "OnePlus 10T 5G (Moonstone Black, 12GB RAM, 256GB Storage)",
+            "Product_Price": "44,999",
+            "Product_Reviews": "4,390"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 2 5G (Bahamas Blue, 8GB RAM, 128GB Storage)",
+            "Product_Price": "24,999",
+            "Product_Reviews": "137,732"
+        },
+        {
+            "Product_Name": "OnePlus 10 Pro 5G (Emerald Forest, 8GB RAM, 128GB Storage)",
+            "Product_Price": "52,999",
+            "Product_Reviews": "6,289"
+        },
+        {
+            "Product_Name": "OnePlus 10 Pro 5G (Volcanic Black, 8GB RAM, 128GB Storage)",
+            "Product_Price": "52,999",
+            "Product_Reviews": "6,289"
+        },
+        {
+            "Product_Name": "(Renewed) OnePlus 6 (Mirror Black, 6GB RAM, 64GB Storage)",
+            "Product_Price": "11,999",
+            "Product_Reviews": "457"
+        },
+        {
+            "Product_Name": "(Refurbished) OnePlus 5T (Midnight Black, 6GB RAM, 64GB Storage)",
+            "Product_Price": "9,190",
+            "Product_Reviews": "708"
+        },
+        {
+            "Product_Name": "(Renewed) OnePlus 5T (Midnight Black, 128GB)",
+            "Product_Price": "",
+            "Product_Reviews": "708"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)",
+            "Product_Price": "19,999",
+            "Product_Reviews": "30,644"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 128GB Storage)",
+            "Product_Price": "19,999",
+            "Product_Reviews": "30,644"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 256GB Storage)",
+            "Product_Price": "21,999",
+            "Product_Reviews": "30,644"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)",
+            "Product_Price": "26,998",
+            "Product_Reviews": "3,426"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 5G (Aqua Surge, 12GB RAM, 256GB Storage)",
+            "Product_Price": "28,998",
+            "Product_Reviews": "3,426"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)",
+            "Product_Price": "21,998",
+            "Product_Reviews": "30,644"
+        },
+        {
+            "Product_Name": "Oneplus Nord CE 3 5G (Grey Shimmer, 8GB RAM, 128GB Storage)",
+            "Product_Price": "26,999",
+            "Product_Reviews": "3,426"
+        },
+        {
+            "Product_Name": "OnePlus Nord CE 3 5G (Grey Shimmer, 12GB RAM, 256GB Storage)",
+            "Product_Price": "28,999",
+            "Product_Reviews": "3,426"
+        },
+        {
+            "Product_Name": "OnePlus Nord 3 5G (Misty Green, 8GB RAM, 128GB Storage)",
+            "Product_Price": "33,999",
+            "Product_Reviews": "2,067"
+        },
+        {
+            "Product_Name": "OnePlus 11R 5G (Galactic Silver, 8GB RAM, 128GB Storage)",
+            "Product_Price": "39,999",
+            "Product_Reviews": "9,076"
+        },
+        {
+            "Product_Name": "OnePlus 10R 5G (Forest Green, 8GB RAM, 128GB Storage, 80W SuperVOOC)",
+            "Product_Price": "27,999",
+            "Product_Reviews": "17,564"
+        },
+        {
+            "Product_Name": "OnePlus 10R 5G (Sierra Black, 8GB RAM, 128GB Storage, 80W SuperVOOC)",
+            "Product_Price": "27,999",
+            "Product_Reviews": "17,564"
+        }
+    ]
+    return one_plus
